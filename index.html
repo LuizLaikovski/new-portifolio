@@ -632,6 +632,7 @@
       border-bottom: 1px solid var(--fg);
       padding-bottom: 2px;
       transition: gap 0.25s;
+      margin: 5px 5px 5px 5px;
     }
 
     .project-link:hover {
@@ -1094,7 +1095,7 @@
           <path d="M7 11V7a5 5 0 0 1 10 0v4" />
         </svg>
         <h3 class="skill-card-title">Segurança</h3>
-        <p class="skill-card-desc">Autenticação segura com JWT e Cookies HttpOnly. Proteção contra ataques XSS e CSRF em
+        <p class="skill-card-desc">Autenticação segura com JWT e Cookies HttpOnly. Proteção contra ataques XSS, CSRF e SQL Injection em
           arquiteturas modernas.</p>
         <div class="skill-tags">
           <span class="skill-tag">JWT</span>
@@ -1133,6 +1134,7 @@
         <p class="skill-card-desc">Modelagem e otimização de bancos relacionais e NoSQL. Queries eficientes e migrações
           seguras via Prisma ORM.</p>
         <div class="skill-tags">
+          <span class="skill-tag">SQL Server</span>
           <span class="skill-tag">PostgreSQL</span>
           <span class="skill-tag">MySQL</span>
           <span class="skill-tag">MongoDB</span>
@@ -1172,7 +1174,6 @@
           <span class="skill-tag">Kanban</span>
           <span class="skill-tag">Git</span>
           <span class="skill-tag">GitHub</span>
-          <span class="skill-tag">CI/CD</span>
         </div>
       </div>
 
@@ -1261,7 +1262,7 @@
 
       <!-- RPA Bot -->
       <article class="project-card reveal-up" aria-label="Projeto: Robô de Automação de Cadastro">
-        <p class="project-label">Projeto Próprio · Fev 2026</p>
+        <p class="project-label">Projeto Profissional · Fev 2026</p>
         <h3 class="project-title">Robô de Automação<br />de Cadastro</h3>
         <p class="project-desc">RPA desenvolvido em Python com Selenium que acessa sistemas web, preenche formulários
           com dados importados de planilhas e gera relatórios de execução com logs estruturados.</p>
@@ -1271,15 +1272,6 @@
           <span>Pandas</span>
           <span>OpenPyXL</span>
         </div>
-        <a href="https://github.com/LuizLaikovski" target="_blank" rel="noopener noreferrer" class="project-link"
-          aria-label="Ver código do robô de automação no GitHub">
-          Ver código
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="7" y1="17" x2="17" y2="7" />
-            <polyline points="7 7 17 7 17 17" />
-          </svg>
-        </a>
       </article>
 
       <!-- Control Desk -->
@@ -1298,6 +1290,68 @@
         <a href="https://www.linkedin.com/in/luizlaikovski/" target="_blank" rel="noopener noreferrer"
           class="project-link" aria-label="Ver detalhes no LinkedIn">
           LinkedIn
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg>
+        </a>
+      </article>
+
+      <!-- ClickReady -->
+      <article class="project-card reveal-up" aria-label="Projeto: Robô de Automação de Cadastro">
+        <p class="project-label">Projeto Próprio · Jul 2025 - Dez 2025</p>
+        <h3 class="project-title">Biblioteca<br />Didática Digital</h3>
+        <p class="project-desc">Sistema desenvolvido para facilitar o acesso a livros didáticos de forma simples e
+          intuitiva.
+          Permite favoritar, comentar e avaliar obras com facilidade, além de contar com um painel administrativo que
+          possibilita
+          a adição de novos livros ao sistema.</p>
+        <div class="project-tech">
+          <span>Java</span>
+          <span>Springbot</span>
+          <span>React</span>
+          <span>Typescript</span>
+          <span>Tailwindcss</span>
+        </div>
+        <a href="https://github.com/LuizLaikovski" target="_blank" rel="noopener noreferrer" class="project-link"
+          aria-label="Ver código do robô de automação no GitHub">
+          Ver código
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg>
+        </a>
+        <a href="https://clickready.netlify.app/home" target="_blank" rel="noopener noreferrer" class="project-link"
+          aria-label="Ver código do robô de automação no GitHub">
+          Ver Site
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg>
+        </a>
+      </article>
+
+      <!-- Chat Bot de Resumir emails -->
+      <article class="project-card reveal-up" aria-label="Projeto: Control Desk - Ferraz Cicarelli & Passold">
+        <p class="project-label">Projeto Pessoal · Fev 2026</p>
+        <h3 class="project-title">Chat Bot —<br />Triador de E-mails</h3>
+        <p class="project-desc">Bot de Telegram que conecta no Gmail via IMAP e usa o Gemini pra analisar e organizar
+          automaticamente seus e-mails dos últimos dias em categorias tipo vagas, faculdade e financeiro.
+          Também permite ver um resumo semanal e marcar e-mails como lidos direto pelo Telegram, sem precisar abrir o
+          Gmail.
+        </p>
+        <div class="project-tech">
+          <span>Python</span>
+          <span>Gemini API</span>
+          <span>IMAP</span>
+          <span>Telegram API</span>
+        </div>
+        <a href="https://github.com/LuizLaikovski/chat-bot" target="_blank" rel="noopener noreferrer"
+          class="project-link" aria-label="Ver detalhes no LinkedIn">
+          Ver código
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="7" y1="17" x2="17" y2="7" />
@@ -1362,7 +1416,8 @@
         <h2 class="section-title" style="margin-bottom:32px">Desenvolvedor<br /><em
             style="font-style:italic;color:var(--muted)">orientado<br />a resultados</em></h2>
         <p>
-          Tenho <strong>18 anos</strong> e já atuo profissionalmente como desenvolvedor Full Stack &amp; RPA, com foco em
+          Tenho <strong>18 anos</strong> e já atuo profissionalmente como desenvolvedor Full Stack &amp; RPA, com foco
+          em
           construir soluções que combinam <strong>performance, segurança e automação inteligente</strong>.
         </p>
         <p>
